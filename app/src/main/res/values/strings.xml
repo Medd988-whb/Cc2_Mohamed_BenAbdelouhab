@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">Cc2_Mohamed_BenAbdelouhab</string>
+    <string name="app_name">Menu Generale</string>
+
+    <string name="titremenu1">Ajouter une entreprise</string>
+    <string name="titremenu2">Lister tous les entreprises</string>
+    <string name="titremenu3">Editer une entreprise</string>
 </resources>
