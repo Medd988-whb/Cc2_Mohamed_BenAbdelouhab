@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,4 +7,53 @@
     android:orientation="vertical"
     tools:context=".Edit_Entr">
 
-</LinearLayout>
+    <Spinner
+        android:id="@+id/sp"
+        style="@style/sp" />
+
+    <EditText
+        android:id="@+id/addRais"
+        android:layout_below="@id/sp"
+        style="@style/txtActivity"
+        android:hint="@string/hint1" />
+
+    <EditText
+        android:id="@+id/addAdr"
+        style="@style/txtActivity"
+        android:layout_below="@id/addRais"
+        android:hint="@string/hint2" />
+
+    <EditText
+        android:id="@+id/addCap"
+        android:layout_below="@id/addAdr"
+        style="@style/txtActivity"
+        android:hint="@string/hint3"
+        android:inputType="numberDecimal" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addCap"
+        >
+        <Button
+            style="@style/btnMenu"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/addCap"
+            android:layout_marginTop="136dp"
+            android:id="@+id/btn1"
+            android:onClick="edit"
+            android:text="@string/btnEdit" />
+
+        <Button
+            style="@style/btnMenu"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/btn1"
+            android:onClick="delete"
+            android:text="@string/btnDelete" />
+    </LinearLayout>
+
+</RelativeLayout>

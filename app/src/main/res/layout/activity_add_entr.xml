@@ -11,19 +11,19 @@
     <EditText
         android:id="@+id/addRais"
         style="@style/txtActivity"
-        android:hint="Tapez votre Raison social ..." />
+        android:hint="@string/hint1" />
 
     <EditText
         android:layout_below="@id/addRais"
         android:id="@+id/addAdr"
         style="@style/txtActivity"
-        android:hint="Tapez votre Adresse ... "/>
+        android:hint="@string/hint2"/>
 
     <EditText
         android:id="@+id/addCap"
         android:layout_below="@id/addAdr"
         style="@style/txtActivity"
-        android:hint="Tapez votre Capital ..."
+        android:hint="@string/hint3"
         android:inputType="numberDecimal" />
 
 

@@ -5,6 +5,16 @@
     <string name="titremenu2">Editer une entreprise</string>
     <string name="titremenu3">Lister une entreprise</string>
 
+
+    <string name="hint1">Tapez votre Raison social ...</string>
+
+    <string name="hint3">Tapez votre Capital ...</string>
+    <string name="hint2">Tapez votre Adresse ...</string>
+
+
     <string name="btnSave">Enregister</string>
     <string name="btnAnnuler">Annuler</string>
+
+    <string name="btnEdit">Modifier</string>
+    <string name="btnDelete">Supprimer</string>
 </resources>
