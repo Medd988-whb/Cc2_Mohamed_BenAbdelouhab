@@ -7,4 +7,5 @@
     android:orientation="vertical"
     tools:context=".List_Entr">
 
+
 </LinearLayout>
