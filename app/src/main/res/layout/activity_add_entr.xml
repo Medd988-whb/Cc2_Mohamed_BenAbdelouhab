@@ -1,10 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".add_entr">
+    tools:context=".add_entr"
+    android:id="@+id/R1">
 
-</LinearLayout>
+    <EditText
+        android:id="@+id/addRais"
+        style="@style/txtActivity"
+        android:hint="Tapez votre Raison social ..." />
+
+    <EditText
+        android:layout_below="@id/addRais"
+        android:id="@+id/addAdr"
+        style="@style/txtActivity"
+        android:hint="Tapez votre Adresse ... "/>
+
+    <EditText
+        android:id="@+id/addCap"
+        android:layout_below="@id/addAdr"
+        style="@style/txtActivity"
+        android:hint="Tapez votre Capital ..."
+        android:inputType="numberDecimal" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addCap"
+        >
+        <Button
+            style="@style/btnMenu"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/addCap"
+            android:layout_marginTop="136dp"
+            android:id="@+id/btn1"
+            android:onClick="ajouter"
+            android:text="@string/btnSave" />
+
+        <Button
+            style="@style/btnMenu"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/btn1"
+            android:onClick="annuler"
+            android:text="@string/btnAnnuler" />
+    </LinearLayout>
+
+
+</RelativeLayout>

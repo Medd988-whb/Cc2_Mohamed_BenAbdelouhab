@@ -39,26 +39,26 @@ public class MyDatabase extends SQLiteOpenHelper {
 
 
 
-    public static void AddEntreprise(SQLiteDatabase db, Entreprise e){
+    public static long AddEntreprise(SQLiteDatabase db, Entreprise e){
         ContentValues cv = new ContentValues();
         cv.put(COL2,e.getRaison());
         cv.put(COL3,e.getAdresse());
         cv.put(COL4,e.getCapitale());
-        db.insert(TABLE_NAME,null,cv);
+        return db.insert(TABLE_NAME,null,cv);
     }
 
 
-    public static void UpdateEntreprise(SQLiteDatabase db, Entreprise e){
+    public static long UpdateEntreprise(SQLiteDatabase db, Entreprise e){
         ContentValues cv = new ContentValues();
         cv.put(COL2,e.getRaison());
         cv.put(COL3,e.getAdresse());
         cv.put(COL4,e.getCapitale());
-        db.update(TABLE_NAME,cv,"id="+e.getId(),null);
+        return db.update(TABLE_NAME,cv,"id="+e.getId(),null);
     }
 
 
-    public static void DeleteEntreprise(SQLiteDatabase db, int id){
-        db.delete(TABLE_NAME,"id="+id,null);
+    public  static long DeleteEntreprise(SQLiteDatabase db, int id){
+        return db.delete(TABLE_NAME,"id="+id,null);
     }
 
 
