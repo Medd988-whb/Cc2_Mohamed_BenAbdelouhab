@@ -14,16 +14,20 @@
     <Button
         android:id="@+id/b1"
         style="@style/btnMenu"
+        android:onClick="send"
         android:text="@string/titremenu1" />
+
 
     <Button
         android:id="@+id/b2"
         style="@style/btnMenu"
+        android:onClick="send"
         android:text="@string/titremenu2" />
 
     <Button
         android:id="@+id/b3"
         style="@style/btnMenu"
+        android:onClick="send"
         android:text="@string/titremenu3" />
 
 
